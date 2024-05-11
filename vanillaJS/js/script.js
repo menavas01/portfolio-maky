@@ -1,0 +1,1 @@
+//document.getElementById("h1Home").textContent = ` Hola, soy Manuel Navas`

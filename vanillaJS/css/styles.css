@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #1c1c2cd3;
+  --secondary-color: #31304D;
+  --tertiary-color: #7469B6;
+  --quaternary-color: #FFE6E6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 10s ease infinite;
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  transform: rotate(80deg);
+  left: 0;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  opacity: 0.4;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  border-radius: 43%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.wave.-one {
+  animation: rotate 15000ms infinite linear;
+  opacity: 0.1;
+  background: var(--primary-color);
+}
+
+.wave.-two {
+  animation: rotate 10000ms infinite linear;
+  opacity: 0.1;
+  background: var(--quaternary-color);
+}
+
+.wave.-three {
+  animation: rotate 12500ms infinite linear;
+  background-color: var(--secondary-color);
+}
+
+#navbar {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%; /* Puedes ajustar este valor según tus necesidades */
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px); /* Aplica un desenfoque al fondo */
+  -webkit-backdrop-filter: blur(10px); /* Prefijo para navegadores WebKit */
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0; /* Elimina el espacio adicional del borde de la lista */
+}
+
+#navbar ul li {
+  margin-right: 100px; /* Reduce el espacio entre elementos */
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a:hover {
+  text-decoration: none;
+  color: var(--quaternary-color);
+}
+
+#navbar img {
+  color: transparent;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#home {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 50px 50px 50px;
+  border-radius: 60px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+#home h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#home img {
+  border-radius: 50%;
+  margin-left: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+  cursor: pointer;
+  align-items: center;
+  padding: 0;
+  width: 60px;
+  margin: 5px;
+}
+
+#tituloHome {
+  display: flex;
+  align-items: center;
+}
+
+#home hr {
+  margin-bottom: 35px;
+}
+
+#home p {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+#home button {
+  background-color: var(--secondary-color);
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#home button:hover {
+  background-color: var(--tertiary-color);
+}
+
+#home button:active {
+  background-color: var(--secondary-color);
+}
+
+#home a{
+  text-decoration: none;
+  color: white;
+}
+
+#sobreMi {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 50px 50px 50px;
+  border-radius: 30px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+#sobreMi h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#sobreMi h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#sobreMi hr {
+  margin-bottom: 10px;
+}
+
+#sobreMi p {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+#proyectos {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 50px 50px 50px;
+  border-radius: 30px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+#proyectos h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#proyectos h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#proyectos hr {
+  margin-bottom: 10px;
+}
+
+#proyectos p {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+#proyectos button {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.048);
+  text-align: center;
+  margin-top: 50px;
+  border: 0;
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+#proyectos button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+#proyectos button:active {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+#proyectos div {
+  text-align: center;
+}
+
+#contacto {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto;
+  padding: 20px 50px 50px 50px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+#contacto h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#contacto h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#contacto hr {
+  margin-bottom: 10px;
+}
+
+#contacto label {
+  font-size: 30px;
+  margin-bottom: 70px;
+  font-weight: bold;
+}
+
+#contacto button {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.062);
+  text-align: center;
+  margin-top: 50px;
+  border: 0;
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+#contacto button:active {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+#contacto input {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+  text-align: center;
+  margin-top: 50px;
+  border: 0;
+  background-color: var(--secondary-color);
+  color: white;
+}
