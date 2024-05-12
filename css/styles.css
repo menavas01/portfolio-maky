@@ -185,27 +185,26 @@ body {
   text-decoration: none;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #navbar a:hover {
-  text-decoration: none;
   color: var(--quaternary-color);
 }
 
 #home {
   background-color: var(--primary-color);
-  padding: 10px;
-  margin-bottom: 10px;
   text-align: left;
   color: white;
   font-size: 20px;
   text-decoration: none;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px 50px 50px 50px;
   border-radius: 60px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
-  margin-top: 270px;
+  padding: 20px 50px 50px 50px;
+  margin-bottom: 10px;
+  max-width: 75rem;
+  margin: auto;
+  margin-top: 17rem;
 }
 
 #home h1 {
@@ -252,6 +251,7 @@ body {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #home button:hover {
@@ -275,7 +275,7 @@ body {
   color: white;
   font-size: 20px;
   text-decoration: none;
-  max-width: 1000px;
+  max-width: 75rem;
   margin: auto;
   padding: 20px 50px 50px 50px;
   border-radius: 30px;
@@ -316,7 +316,7 @@ body {
   color: white;
   font-size: 20px;
   text-decoration: none;
-  max-width: 1000px;
+  max-width: 75rem;
   margin: auto;
   padding: 20px 50px 50px 50px;
   border-radius: 30px;
@@ -358,6 +358,7 @@ body {
   border: none;
   cursor: pointer;
   margin-top: 75px;
+  transition: 0.3s;
 }
 
 #proyectos button:hover {
@@ -417,6 +418,7 @@ body {
   background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #contacto button:hover {
@@ -430,3 +432,219 @@ body {
 #contacto p {
   margin-top: 10px;
 }
+
+/* MEDIA QUERIES */
+
+@media(min-width: 2560px){
+  #navbar{
+    max-width: 50rem;
+  }
+
+  #navbar ul li {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 25px;
+  }
+
+  #home,
+  #sobreMi,
+  #proyectos {
+    max-width: 100rem;
+    border-radius: 50px;
+  }
+
+  #home {
+    margin-top: 625px;
+  }
+
+  #home h1,
+  #sobreMi h2,
+  #proyectos h2 {
+    font-size: 60px;
+  }
+
+  #sobreMi h3,
+  #proyectos h3{
+    font-size: 50px;
+  }
+
+  #contacto label{
+    font-size: 45px;
+  }
+  
+  #home img {
+    width: 90px;
+    margin: 5px;
+  }
+
+  #home p,
+  #home button,
+  #sobreMi p,
+  #proyectos p,
+  #proyectos ul,
+  #proyectos button,
+  #contacto input,
+  #contacto button{
+    font-size: 28px;
+  }
+
+  #contacto input{
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  #contacto p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 1024px){
+  #home,
+  #sobreMi,
+  #proyectos {
+    max-width: 60rem;
+  }
+}
+
+@media(max-width: 768px){
+  #home,
+  #sobreMi,
+  #proyectos {
+    max-width: 45rem;
+  }
+
+  #contacto p {
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 425px){
+  #navbar{
+    max-width: 20rem;
+  }
+
+  #navbar ul li {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+  #home,
+  #sobreMi,
+  #proyectos {
+    max-width: 25rem;
+    border-radius: 50px;
+  }
+
+  #home {
+    margin-top: 250px;
+  }
+
+  #home h1,
+  #sobreMi h2,
+  #sobreMi h3,
+  #proyectos h2,
+  #proyectos h3,
+  #contacto label {
+    font-size: 20px;
+  }
+  
+  #home img {
+    width: 40px;
+    margin: 5px;
+  }
+
+  #home p,
+  #home button,
+  #sobreMi p,
+  #proyectos p,
+  #proyectos ul,
+  #proyectos button,
+  #contacto input,
+  #contacto button{
+    font-size: 17px;
+  }
+
+  #contacto input{
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  #contacto p {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+}
+
+@media(max-width:375px){
+
+  #navbar{
+    max-width: 20rem;
+  }
+
+  #navbar ul li {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 12.5px;
+  }
+
+  #home,
+  #sobreMi,
+  #proyectos {
+    max-width: 22rem;
+    border-radius: 50px;
+  }
+
+  #home button,
+  #proyectos button,
+  #contacto input,
+  #contacto button{
+    font-size: 15px;
+  }
+
+  #home {
+    margin-top: 240px;
+  }
+}
+
+@media(max-width:320px){
+  #navbar ul li {
+    font-size: 12px;
+  }
+
+  #home,
+  #sobreMi,
+  #proyectos {
+    max-width: 19rem;
+    border-radius: 40px;
+  }
+
+  #home{
+    margin-top: 190px;
+  }
+
+  #home button,
+  #proyectos button,
+  #contacto input,
+  #contacto button{
+    font-size: 13px;
+  }
+
+  #home button{
+    margin-right: 5px;
+  }
+}
+
+@media (max-height:600px){
+  #home{
+    margin-top: 120px;
+  }
+}
+
+@media (max-height:667px){
+  #home{
+    margin-top: 120px;
+  }
+}
+
