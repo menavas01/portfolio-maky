@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+
+    <!-- ventana modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p id="modalText"> ✓ Contenido copiado al portapapeles!</p>
+      </div>
+    </div>
+
     <main>
       <header>
         <nav id="navbar">
           <ul>
-            <li><a href="#sobreMi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a class="navBarA" href="#sobreMi">Sobre mí</a></li>
+            <li><a class="navBarA" href="#proyectos">Proyectos</a></li>
+            <li><a class="navBarA" href="#contacto">Contacto</a></li>
           </ul>
         </nav>
 
@@ -23,9 +31,13 @@
             <h1 id="h1Home">Hola, soy Manuel Navas</h1>
           </div>
           <p>
-            <strong>Desarrollador Full Stack de Buenos Aires, Argentina 🇦🇷</strong>  <br><br> 
-            Apasionado por la tecnología y siempre buscando mejorar mis habilidades, acepto desafíos 
-            y estoy emocionado por aprender constantemente.
+            <strong
+              >Desarrollador Full Stack de Buenos Aires, Argentina 🇦🇷</strong
+            >
+            <br /><br />
+            Apasionado por la tecnología y siempre buscando mejorar mis
+            habilidades, acepto desafíos y estoy emocionado por aprender
+            constantemente.
           </p>
 
           <a
@@ -41,7 +53,7 @@
       </header>
 
       <div class="scroll-down"></div>
-      
+
       <section id="sobreMi">
         <div id="divSobreMi">
           <h2>Sobre mí</h2>
@@ -52,7 +64,7 @@
           </p>
         </div>
 
-        <div id="formacionYExperiencia">
+        <div id="divFormacionYExperiencia">
           <h3>Formación y Experiencia</h3>
 
           <p>
@@ -64,7 +76,7 @@
           </p>
         </div>
 
-        <div id="habilidadesYTecnologias">
+        <div id="divHabilidadesYTecnologias">
           <h3>Habilidades y Tecnologías</h3>
 
           <p>
@@ -78,7 +90,7 @@
           </p>
         </div>
 
-        <div id="enfoqueActual">
+        <div id="divEnfoqueActual">
           <h3>Enfoque Actual</h3>
 
           <p>
@@ -149,9 +161,18 @@
       </section>
 
       <footer id="contacto">
-        <h2>Contacto</h2>
-        <label>Correo Electrónico </label>
-        <input type="text" value="menavasj21@gmail.com" disabled /><br />
+        <div>
+          <label>Correo Electrónico </label>
+          <input
+            id="email"
+            type="text"
+            value="menavasj21@gmail.com"
+            readonly
+          />
+          <button id="copiar">📋</button>
+        </div>
+        <br />
+        <p id="copyright"></p>
       </footer>
     </main>
 

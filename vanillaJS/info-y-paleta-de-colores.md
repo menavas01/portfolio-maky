@@ -1,3 +1,5 @@
+# Info de la pagina
+
 Acerca de Mí
 ¡Hola! Soy [Tu Nombre], un apasionado desarrollador web de [Tu Ciudad], Argentina. A mis 23 años, he estado inmerso en el mundo de la tecnología y la programación desde hace varios años.
 
@@ -15,12 +17,28 @@ Mi enfoque actual se centra en expandir mi conocimiento en tecnologías emergent
 Objetivos Futuros
 Mi meta es seguir creciendo como desarrollador web, contribuir a proyectos emocionantes y desafiantes, y convertirme en un profesional altamente competente en el campo de la tecnología.
 
-Puedes personalizar este texto según tus preferencias y experiencias específicas. ¡Espero que te sea útil!
 
+© 2024. Aprendiendo, creciendo y creando en el sector tecnológico.
+© 2024. Aprendiendo, creciendo y creando en la industria del software.
 
 # Paleta de colores
 
-1- #070F2B
-2- #1B1A55
-3- #535C91
-4- #9290C3
+--primary-color: #03001c93;
+--secondary-color: #301E67;
+--tertiary-color: #5B8FB9;
+--quaternary-color: #B6EADA;
+
+https://colorhunt.co/palette/03001c301e675b8fb9b6eada
+
+# Simbolos
+
+☀
+⇣
+☾
+⌄
+﹀
+︾
+▼
+✓
+⎙
+©︎
