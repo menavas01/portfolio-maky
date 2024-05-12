@@ -193,18 +193,25 @@ body {
 }
 
 #home {
-  background-color: var(--primary-color);
   text-align: left;
   color: white;
   font-size: 20px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#contenidoHome {
+  max-width: 75rem; /* Esto hará que el div sea responsive */
+  height: auto; /* Esto permitirá que el div cambie su altura en función del contenido */
+  margin: auto;
   border-radius: 60px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+  background-color: var(--primary-color);
   padding: 20px 50px 50px 50px;
-  margin-bottom: 10px;
-  max-width: 75rem;
-  margin: auto;
-  margin-top: 17rem;
 }
 
 #home h1 {
@@ -446,15 +453,11 @@ body {
     font-size: 25px;
   }
 
-  #home,
+  #contenidoHome,
   #sobreMi,
   #proyectos {
     max-width: 100rem;
     border-radius: 50px;
-  }
-
-  #home {
-    margin-top: 625px;
   }
 
   #home h1,
@@ -500,7 +503,7 @@ body {
 }
 
 @media(max-width: 1024px){
-  #home,
+  #contenidoHome,
   #sobreMi,
   #proyectos {
     max-width: 60rem;
@@ -508,7 +511,7 @@ body {
 }
 
 @media(max-width: 768px){
-  #home,
+  #contenidoHome,
   #sobreMi,
   #proyectos {
     max-width: 45rem;
@@ -530,15 +533,11 @@ body {
     font-size: 13px;
   }
 
-  #home,
+  #contenidoHome,
   #sobreMi,
   #proyectos {
     max-width: 25rem;
     border-radius: 50px;
-  }
-
-  #home {
-    margin-top: 250px;
   }
 
   #home h1,
@@ -589,7 +588,7 @@ body {
     font-size: 12.5px;
   }
 
-  #home,
+  #contenidoHome,
   #sobreMi,
   #proyectos {
     max-width: 22rem;
@@ -603,9 +602,6 @@ body {
     font-size: 15px;
   }
 
-  #home {
-    margin-top: 240px;
-  }
 }
 
 @media(max-width:320px){
@@ -613,15 +609,11 @@ body {
     font-size: 12px;
   }
 
-  #home,
+  #contenidoHome,
   #sobreMi,
   #proyectos {
     max-width: 19rem;
     border-radius: 40px;
-  }
-
-  #home{
-    margin-top: 190px;
   }
 
   #home button,
@@ -636,15 +628,4 @@ body {
   }
 }
 
-@media (max-height:600px){
-  #home{
-    margin-top: 120px;
-  }
-}
-
-@media (max-height:667px){
-  #home{
-    margin-top: 120px;
-  }
-}
 

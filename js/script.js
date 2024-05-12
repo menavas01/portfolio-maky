@@ -6,10 +6,10 @@ document.querySelectorAll('.navBarA').forEach(anchor => {
         let id = this.getAttribute('href')
         let targetElement = document.querySelector(id)
         let scrollPosition = window.pageYOffset
-        let topSpace = -200 // Espacio en pixeles. Ajusta este valor al tamaño de tu navbar.
+        let topSpace = 75// Espacio en pixeles. Ajusta este valor al tamaño de tu navbar.
         console.log(scrollPosition)
         if (scrollPosition < 50){
-            topSpace = -20
+            topSpace = 540
         }
         window.scroll({
             top: targetElement.offsetTop - topSpace,
@@ -28,7 +28,7 @@ window.onscroll = function() {
     let sobreMi = document.querySelector('#sobreMi')
     if (scrollPosition > 50) { // Ajusta este valor según tus necesidades
         scrollDownElement.style.opacity = '0'
-        sobreMi.style.marginTop = '100px'
+        sobreMi.style.marginTop = '-10%'
         sobreMi.style.opacity = '1'
     } else {
         scrollDownElement.style.opacity = '1'
