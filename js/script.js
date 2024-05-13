@@ -9,7 +9,7 @@ document.querySelectorAll('.navBarA').forEach(anchor => {
         let topSpace = 75// Espacio en pixeles. Ajusta este valor al tamaño de tu navbar.
         console.log(scrollPosition)
         if (scrollPosition < 50){
-            topSpace = 540
+            topSpace = 275
         }
         window.scroll({
             top: targetElement.offsetTop - topSpace,
@@ -19,20 +19,20 @@ document.querySelectorAll('.navBarA').forEach(anchor => {
     })
 })
 
-let sobreMi = document.querySelector('#sobreMi')
+let sobreMi = document.querySelector('#divSobreMi')
 sobreMi.style.opacity = '0'
 
 window.onscroll = function() {
     let scrollPosition = window.pageYOffset
     let scrollDownElement = document.querySelector('.scroll-down')
-    let sobreMi = document.querySelector('#sobreMi')
+    sobreMi = document.querySelector('#divSobreMi')
     if (scrollPosition > 50) { // Ajusta este valor según tus necesidades
         scrollDownElement.style.opacity = '0'
-        sobreMi.style.marginTop = '-10%'
+        sobreMi.style.marginTop = '100px'
         sobreMi.style.opacity = '1'
     } else {
         scrollDownElement.style.opacity = '1'
-        sobreMi.style.marginTop = '275px'
+        sobreMi.style.marginTop = '300px'
         sobreMi.style.opacity = '0'
     }
 }
