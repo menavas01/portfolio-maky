@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Maky</title>
+    <link rel="icon" href="./media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -30,7 +31,7 @@
       <section id="home">
         <div id="contenidoHome">
           <div id="tituloHome">
-            <img src="./media/profilePic.jpg" alt="Foto de Manuel Navas" />
+            <img id = "profilePic" src="./media/profilePic.jpg" alt="Foto de Manuel Navas" />
             <h1 id="h1Home">Hola, soy Manuel Navas</h1>
           </div>
           <p>
@@ -42,16 +43,18 @@
             habilidades, acepto desafíos y estoy emocionado por aprender
             constantemente.
           </p>
-
-          <a
+          <div id = "contenedorBotones">
+            <a
             href="https://www.linkedin.com/in/manuel-navas-41495a164/"
             target="_blank"
-          >
-            <button>LinkedIn</button>
-          </a>
-          <a href="https://github.com/menavas01" target="_blank">
-            <button>GitHub</button>
-          </a>
+            >
+            <button><img class = "logoBoton" src="./media/linkedin.svg" alt="Logo LinkedIn">LinkedIn</button>
+            </a>
+            <a href="https://github.com/menavas01" target="_blank">
+            <button><img class = "logoBoton" src="./media/github.svg" alt="Logo GitHub">GitHub</button>
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -114,13 +117,13 @@
 
       <section id="proyectos">
         <div id="divProyectos">
-          <h2>Proyectos</h2>
-
-          <p>
-            ¡Aquí encontrarás una selección de algunos de mis proyectos más
-            destacados!
-          </p>
+          <h2> <img src="./media/codelogo.svg" alt="Logo Code"> Proyectos</h2>
         </div>
+        <p>
+          ¡Aquí encontrarás una selección de algunos de mis proyectos más
+          destacados!
+        </p>
+        
 
         <div id="divProyecto1">
           <h3>Proyecto 1: Nombre del Proyecto</h3>

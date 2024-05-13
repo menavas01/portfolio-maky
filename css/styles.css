@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: #03001c93;
-  --secondary-color: #301E67;
-  --tertiary-color: #5B8FB9;
-  --quaternary-color: #B6EADA;
+  --primary-color: hsla(246, 100%, 5%, 0.576);
+  --secondary-color: hsl(255, 55%, 26%);
+  --tertiary-color: hsl(207, 40%, 54%);
+  --quaternary-color: hsl(162, 55%, 82%);
 }
 
 * {
@@ -185,7 +185,7 @@ body {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 #navbar a:hover {
@@ -222,7 +222,7 @@ body {
   margin-left: 15px;
 }
 
-#home img {
+#profilePic {
   border-radius: 50%;
   margin-left: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
@@ -238,14 +238,15 @@ body {
   align-items: center;
 }
 
-#home hr {
-  margin-bottom: 35px;
-}
-
 #home p {
   font-size: 20px;
   margin-top: 35px;
   margin-bottom: 40px;
+}
+
+#contenedorBotones {
+  display: flex;
+  align-items: center;
 }
 
 #home button {
@@ -258,7 +259,7 @@ body {
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 #home button:hover {
@@ -272,6 +273,12 @@ body {
 #home a {
   text-decoration: none;
   color: white;
+}
+
+.logoBoton {
+  width: 2vh;
+  align-items: center;
+  margin-right: 6px;
 }
 
 #sobreMi {
@@ -331,6 +338,16 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
 
+#divProyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#proyectos img{
+  width: 30px;
+}
+
 #proyectos h2 {
   font-size: 40px;
   font-weight: bold;
@@ -345,13 +362,10 @@ body {
   margin-bottom: 5px;
 }
 
-#proyectos hr {
-  margin-bottom: 10px;
-}
-
 #proyectos p {
   font-size: 20px;
   margin-bottom: 70px;
+  text-align: center;
 }
 
 #proyectos button {
@@ -365,7 +379,7 @@ body {
   border: none;
   cursor: pointer;
   margin-top: 75px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 #proyectos button:hover {
@@ -425,7 +439,7 @@ body {
   background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 #contacto button:hover {
@@ -522,7 +536,7 @@ body {
   }
 }
 
-@media(max-width: 425px){
+@media(max-width: 432px){
   #navbar{
     max-width: 20rem;
   }
@@ -549,7 +563,7 @@ body {
     font-size: 20px;
   }
   
-  #home img {
+  #profilePic {
     width: 40px;
     margin: 5px;
   }
@@ -562,7 +576,7 @@ body {
   #proyectos button,
   #contacto input,
   #contacto button{
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #contacto input{
@@ -574,9 +588,10 @@ body {
     margin-bottom: 20px;
     font-size: 13px;
   }
+
 }
 
-@media(max-width:375px){
+@media(max-width:390px){
 
   #navbar{
     max-width: 20rem;
@@ -599,12 +614,16 @@ body {
   #proyectos button,
   #contacto input,
   #contacto button{
-    font-size: 15px;
+    font-size: 11px;
+  }
+
+  .logoBoton {
+    width: 12px;
   }
 
 }
 
-@media(max-width:320px){
+@media(max-width:346px){
   #navbar ul li {
     font-size: 12px;
   }
@@ -620,7 +639,11 @@ body {
   #proyectos button,
   #contacto input,
   #contacto button{
-    font-size: 13px;
+    font-size: 9px;
+  }
+
+  .logoBoton {
+    width: 10px;
   }
 
   #home button{
