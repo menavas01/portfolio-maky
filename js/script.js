@@ -19,13 +19,13 @@ document.querySelectorAll('.navBarA').forEach(anchor => {
     })
 })
 
-let sobreMi = document.querySelector('#divSobreMi')
+let sobreMi = document.querySelector('#sobreMi')
 sobreMi.style.opacity = '0'
 
 window.onscroll = function() {
     let scrollPosition = window.pageYOffset
     let scrollDownElement = document.querySelector('.scroll-down')
-    sobreMi = document.querySelector('#divSobreMi')
+    sobreMi = document.querySelector('#sobreMi')
     if (scrollPosition > 50) { // Ajusta este valor según tus necesidades
         scrollDownElement.style.opacity = '0'
         sobreMi.style.marginTop = '100px'
