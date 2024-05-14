@@ -117,31 +117,6 @@ body {
   }
 }
 
-/* Estilos para la ventana modal */
-.modal {
-  text-align: center;
-  padding: 10px;
-  font-weight: 400;
-  font-size: 15px;
-  color: white;
-  border-radius: 30px;
-  position: fixed;
-  top: 0;
-  left: 1;
-  right: 0;
-  opacity: 0;
-  transition: 0.5s ease-out;
-}
-.modal-content {
-  background-color: #03001c81;
-  margin: 15% auto;
-  color: rgb(130, 255, 130);
-  padding: 20px;
-  border: 0;
-  max-width: 330px;
-  border-radius: 30px;
-}
-
 /* ANIMACIONES Y DECLARACIONES DE VARIBLES */
 
 #navbar {
@@ -511,6 +486,10 @@ body {
 
 #contacto div{
   padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 #contacto label {
@@ -554,13 +533,23 @@ body {
   background-color: var(--secondary-color);
 }
 
+#contacto img {
+  height: 20px;
+}
+
+#contacto span {
+  color: rgb(40, 255, 40);
+  opacity: 0;
+  transition: 0.5s;
+}
+
 #contacto p {
   margin-top: 50px;
   margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
-
+/* 
 @media(min-width: 2560px){
   #navbar{
     max-width: 50rem;
@@ -619,7 +608,7 @@ body {
     margin-bottom: 20px;
     font-size: 20px;
   }
-}
+} */
 
 @media(max-width: 1024px){
   #contenidoHome,
@@ -661,6 +650,15 @@ body {
     margin-top: -30px;
   }
 
+  #contacto div{
+    max-width: 400px;
+    display: grid;
+    margin: auto;
+  }
+
+  #contacto button{
+    margin: auto;
+  }
 }
 
 @media(max-width: 768px){
@@ -672,11 +670,6 @@ body {
 
   #contacto p {
     margin-bottom: 20px;
-  }
-
-  #contacto div{
-    max-width: 400px;
-    margin: auto;
   }
 }
 
@@ -723,10 +716,6 @@ body {
     font-size: 15px;
   }
 
-  #contacto input{
-    margin-top: 30px;
-    margin-right: 10px;
-  }
 
   #contacto p {
     margin-bottom: 20px;

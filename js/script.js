@@ -42,18 +42,18 @@ window.onscroll = function() {
 // Obten el elemento de entrada por su ID
 let email = document.getElementById("email");
 let copiar = document.getElementById("copiar");
-let modal = document.querySelector("#myModal");
+let span = document.querySelector("#span");
 
 // Asigna la función al evento onclick del elemento
 copiar.onclick = function () {
     email.disabled = true
     navigator.clipboard.writeText(email.value);
 
-    modal.style.opacity = '1'
+    span.style.opacity = '1'
 
-    // Oculta la ventana modal después de 2 segundos
+    // Oculta la ventana span después de 2 segundos
     setTimeout(function() {
-        modal.style.opacity = '0'
+        span.style.opacity = '0'
     }, 2000)
     
     email.disabled = false

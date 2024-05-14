@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- ventana modal -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <p id="modalText">✓ Contenido copiado al portapapeles!</p>
-      </div>
-    </div>
 
     <main>
       <header>
@@ -221,8 +215,9 @@
         <div>
           <label>Correo Electrónico </label>
           <input id="email" type="text" value="menavasj21@gmail.com" readonly />
-          <button id="copiar">📋</button>
+          <button id="copiar"> <img src="media/copy.svg" alt="Icono copiar Email"></button> <br>
         </div>
+        <span id="span"><i>Email copiado al portapapeles </i></span>
         <br />
         <p id="copyright"></p>
       </footer>
