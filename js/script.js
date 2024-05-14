@@ -30,6 +30,7 @@ window.onscroll = function() {
         scrollDownElement.style.opacity = '0'
         sobreMi.style.marginTop = '100px'
         sobreMi.style.opacity = '1'
+
     } else {
         scrollDownElement.style.opacity = '1'
         sobreMi.style.marginTop = '300px'
