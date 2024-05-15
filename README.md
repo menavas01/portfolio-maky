@@ -1,1 +1,1 @@
-# Portfolio personal hecho en vanilla JS
+# Portfolio personal hecho en Vanilla JS
