@@ -7,7 +7,7 @@ document.querySelectorAll('.navBarA').forEach(anchor => {
         let targetElement = document.querySelector(id)
         let scrollPosition = window.pageYOffset
         let topSpace = 75// Espacio en pixeles. Ajusta este valor al tamaño de tu navbar.
-        console.log(scrollPosition)
+
         if (scrollPosition < 50){
             topSpace = 275
         }
